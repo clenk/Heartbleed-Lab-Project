@@ -1,0 +1,6 @@
+<Files "users.db">
+Order Allow,Deny
+Deny from all
+</Files>
+
+ErrorDocument 404 /eshopper/404.php
