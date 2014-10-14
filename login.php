@@ -239,10 +239,10 @@ class OneFileLoginApplication
                 $this->user_is_logged_in = true;
                 return true;
             } else {
-                $this->feedback = "Wrong password.";
+                $this->feedback = "Wrong combination.";
             }
         } else {
-            $this->feedback = "This user does not exist.";
+            $this->feedback = "Wrong combination.";
         }
         // default return
         return false;

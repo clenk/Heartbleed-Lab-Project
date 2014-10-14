@@ -55,13 +55,13 @@ include('session.php');
 										<img src="images/fruit/product1.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="1"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="1"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -80,13 +80,13 @@ include('session.php');
 										<img src="images/fruit/product2.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="2 pid="3""><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="2"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -105,38 +105,13 @@ include('session.php');
 										<img src="images/fruit/product3.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="3"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/fruit/product4.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="3"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 									<img src="images/home/new.png" class="new" alt="" />
@@ -153,16 +128,41 @@ include('session.php');
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/fruit/product5.jpg" alt="" />
+										<img src="images/fruit/product4.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="4"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="4"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/fruit/product5.jpg" alt="" />
+										<h2>$56</h2>
+										<p>Easy Polo Black Edition</p>
+										<a href="#" class="btn btn-default add-to-cart" pid="5"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>$56</h2>
+											<p>Easy Polo Black Edition</p>
+											<a href="#" class="btn btn-default add-to-cart" pid="5"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 									<img src="images/home/sale.png" class="new" alt="" />
@@ -182,13 +182,13 @@ include('session.php');
 										<img src="images/fruit/product6.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="6"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="6"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -208,13 +208,13 @@ include('session.php');
 										<img src="images/fruit/product7.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="7"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="7"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -234,15 +234,16 @@ include('session.php');
 										<img src="images/fruit/product8.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="8"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="8"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
+									<img src="images/home/new.png" class="new" alt="" />
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
@@ -260,15 +261,16 @@ include('session.php');
 										<img src="images/fruit/product9.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="9"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="9"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
+									<img src="images/home/new.png" class="new" alt="" />
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
@@ -286,15 +288,16 @@ include('session.php');
 										<img src="images/fruit/product10.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="10"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="10"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
+									<img src="images/home/new.png" class="new" alt="" />
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
@@ -313,13 +316,13 @@ include('session.php');
 										<img src="images/fruit/product11.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="11"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="11"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -339,13 +342,13 @@ include('session.php');
 										<img src="images/fruit/product12.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="12"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="12"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -365,13 +368,13 @@ include('session.php');
 										<img src="images/fruit/product13.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="13"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="13"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -391,13 +394,13 @@ include('session.php');
 										<img src="images/fruit/product14.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="14"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="14"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -417,13 +420,13 @@ include('session.php');
 										<img src="images/fruit/product15.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart" pid="15"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" pid="15"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -460,5 +463,16 @@ include('session.php');
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+    $(".add-to-cart").click(function(e) {
+    	id = $(e.target).attr("pid");
+		$.ajax({
+		    url: "cart_update.php",
+		    data: 'a=add&pid=' + id,
+		    type: "POST"
+		});
+    });
+    </script>
 </body>
 </html>

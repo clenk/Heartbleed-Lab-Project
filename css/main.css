@@ -1608,7 +1608,8 @@ h2.title {
 
 
 #cart_items .cart_info .cart_description h4 {
-  margin-bottom: 0
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 #cart_items .cart_info .cart_description h4 a {
@@ -1637,7 +1638,12 @@ h2.title {
 
 .cart_product {
   display: block;
-  margin: 15px -70px 10px 25px;
+  /*margin: 15px -70px 10px 25px;*/
+  margin: 15px -200px 10px 25px;
+}
+
+.cart_product img {
+  width: 255px;
 }
 
 .cart_quantity_button a {

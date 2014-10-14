@@ -1,5 +1,6 @@
 <?php
 include('session.php');
+include('product.php');
 ?>
 
 <!DOCTYPE html>
@@ -35,12 +36,18 @@ include('session.php');
 
 	<section id="cart_items">
 		<div class="container">
-			<div class="breadcrumbs">
+			<!--<div class="breadcrumbs">
 				<ol class="breadcrumb">
 				  <li><a href="#">Home</a></li>
 				  <li class="active">Shopping Cart</li>
 				</ol>
-			</div>
+			</div>-->
+			<h1>Shopping Cart</h1>
+			<?php
+			if (!isset($_SESSION['cart'])) {
+				echo "<h2>Cart is Empty</h2>";
+			} else {
+			?>
 			<div class="table-responsive cart_info">
 				<table class="table table-condensed">
 					<thead>
@@ -48,101 +55,51 @@ include('session.php');
 							<td class="image">Item</td>
 							<td class="description"></td>
 							<td class="price">Price</td>
-							<td class="quantity">Quantity</td>
-							<td class="total">Total</td>
+							<!--<td class="total">Total</td>-->
 							<td></td>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="images/cart/one.png" alt=""></a>
-							</td>
-							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="images/cart/two.png" alt=""></a>
-							</td>
-							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="images/cart/three.png" alt=""></a>
-							</td>
-							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
+						<?php
+						foreach ($_SESSION['cart'] as $prod) {
+							echo "<tr>";
+							echo '<td class="cart_product">';
+								echo '<a href=""><img src="images/fruit/product'.$prod.'.jpg" alt=""></a>';
+							echo '</td>';
+							echo '<td class="cart_description">';
+								echo '<h4><a href="">'.$products[$prod-1]->name.'</a></h4>';
+								//echo '<p>Web ID: 1089772</p>';
+							echo '</td>';
+							echo '<td class="cart_price">';
+								echo '<p>'.$products[$prod]->price.'</p>';
+							echo '</td>';
+							//echo '<td class="cart_total">';
+							//	echo '<p class="cart_total_price">$59</p>';
+							//echo '</td>';
+							echo '<td class="cart_delete">';
+								echo '<a class="cart_quantity_delete" cid="'.($prod-1).'"><i class="fa fa-times"></i></a>';
+							echo '</td>';
+							echo "</tr>";
+						}
+						?>
 					</tbody>
 				</table>
 			</div>
+			<?php
+			}
+			?>
 		</div>
 	</section> <!--/#cart_items-->
 
 	<section id="do_action">
 		<div class="container">
 			<div class="heading">
-				<h3>What would you like to do next?</h3>
-				<p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+				<!--<h3>What would you like to do next?</h3>
+				<p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>-->
+				<h3>Where is the Checkout?</h3>
+				<p>If we were a real store, there would be a button here to checkout and give us your payment information. However, we are not set up to take your money at this time. We apologize for the inconvenience.</p>
 			</div>
-			<div class="row">
+			<!--<div class="row">
 				<div class="col-sm-6">
 					<div class="chose_area">
 						<ul class="user_option">
@@ -209,7 +166,7 @@ include('session.php');
 							<a class="btn btn-default check_out" href="">Check Out</a>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	</section><!--/#do_action-->
 
@@ -224,5 +181,17 @@ include('session.php');
 	<script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+    $(".cart_delete a").click(function(e) {
+    	id = $(e.currentTarget).attr("cid");
+		$.ajax({
+		    url: "cart_update.php",
+		    data: 'a=rem&cid=' + id,
+		    type: "POST"
+		});
+		window.location.href = "cart.php";
+    });
+    </script>
 </body>
 </html>
