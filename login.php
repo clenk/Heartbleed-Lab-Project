@@ -370,8 +370,6 @@ class OneFileLoginApplication
     <title>Login | O-Fruit</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/price-range.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
@@ -379,11 +377,7 @@ class OneFileLoginApplication
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+   
 </head><!--/head-->
 
 <body>
@@ -482,9 +476,13 @@ EOT2;
         echo '<h2>New User Signup!</h2>';
 
         echo '<form method="post" action="' . $_SERVER['SCRIPT_NAME'] . '?action=register" name="registerform">';
+        echo 'Username';
         echo '<input id="login_input_username" type="text" pattern="[a-zA-Z0-9]{2,64}" name="user_name" required  placeholder="Username (only letters and numbers, 2 to 64 characters)" />';
+        echo 'Email';
         echo '<input id="login_input_email" type="email" name="user_email" required placeholder="Email Address" />';
+        echo 'Password';
         echo '<input id="login_input_password_new" class="login_input" type="password" name="user_password_new" pattern=".{6,}" required autocomplete="off" placeholder="Password (min. 6 characters)" />';
+        echo 'Repeat Password';
         echo '<input id="login_input_password_repeat" class="login_input" type="password" name="user_password_repeat" pattern=".{6,}" required autocomplete="off" placeholder="Repeat password" />';
         echo '<button type="submit" class="btn btn-default" name="register" value="Register">Signup</button>';
         echo '</form>';
